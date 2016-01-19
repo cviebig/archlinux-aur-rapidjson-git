@@ -5,7 +5,7 @@ pkgdesc="Rapidjson is an attempt to create the fastest JSON parser and generator
 
 arch=('any')
 url="https://github.com/miloyip/rapidjson"
-license=('GPL')
+license=('MIT')
 conflicts=('rapidjson')
 provides=('rapidjson')
 makedepends=('git')
