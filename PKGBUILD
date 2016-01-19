@@ -1,5 +1,5 @@
 pkgname=rapidjson-git
-pkgver=r1069.4e8e99c
+pkgver=1.0.1.250.g44f81f0
 pkgrel=1
 pkgdesc="Rapidjson is an attempt to create the fastest JSON parser and generator."
 
@@ -14,7 +14,7 @@ md5sums=('SKIP')
 
 pkgver() {
   cd "$srcdir/rapidjson"
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  git describe --always --tags | sed -e 's|^v||' -e 's|-|.|g'
 }
 
 build() {
