@@ -1,5 +1,3 @@
-# Maintainer: Tolga HOŞGÖR <fasdfasdas@gmail.com>
-
 pkgname=rapidjson-git
 pkgver=r1069.4e8e99c
 pkgrel=1
